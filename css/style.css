@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --MAIN-COLOR: #FFFFAA;
+  --COLOR-LIGHT: #FCFCB8;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  /* background-color: #000000; */
+  background-color: #FFFFFF;
+  color: FFFFFF;
+
+  a[href*="skills"] {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  /* .header__link-to-home { */
+  /*   flex-grow: 1; */
+  /* } */
+}
+
+section {
+  min-height: 100vh;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
+  /* a[href*="contact"] { */
+  /*   flex-grow: 1; */
+  /*   text-align: center; */
+  /* } */
+}
+
+a {
+  color: #000000;
+  text-decoration: underline;
+
+  :visited {
+    color: black;
+  }
+
+  :hover,
+  :focus {
+    text-decoration: underline;
+  }
+
+}
+
+
+.section--front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--MAIN-COLOR);
+}
+
+.section--secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--COLOR-LIGHT);
+}
